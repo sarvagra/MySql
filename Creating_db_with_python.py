@@ -1,11 +1,8 @@
 import mysql.connector
+from credentials import DATABASE_CONFIG  
 
 # Establish a connection
-conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="7334@Sql"
-)
+conn = DATABASE_CONFIG
 
 # Create a cursor object
 cursor = conn.cursor()
