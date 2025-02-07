@@ -1,5 +1,5 @@
 import mysql.connector
-from credentials import DATABASE_CONFIG  
+from Sql_With_Python.credentials import DATABASE_CONFIG  
 
 # Establish a connection
 mydb = DATABASE_CONFIG

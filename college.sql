@@ -1,4 +1,5 @@
-CREATE DATABASE college;
+-- creating a database , always use  if not exists  to eliminate errors
+CREATE DATABASE IF NOT EXISTS college; 
 USE college;
 CREATE TABLE student(
     rollno INT PRIMARY KEY,
@@ -7,7 +8,6 @@ CREATE TABLE student(
     grade VARCHAR(1),
     city VARCHAR(25)
 )
-
 INSERT INTO student(rollno, name, marks, grade, city)
 VALUES
 (101, "anil", 78, "C", "Pune"),

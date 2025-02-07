@@ -1,6 +1,15 @@
 # MySql
 Contains all self made notes for Sql
 
+**DATA TYPES**
+INT: whole numbers
+DECIMAL : decimal numbers exact values
+VARCHAR(1) : string text of length one 
+BLOB : binary large object, stores large data
+DATE : "YY-MM-DD"
+TIMESTAMP ::"YY-MM-DD HH:MM:SS"
+
+
 # Keys
 **Primary Key:**
 It is a column or a set of columns in a table that uniquely identifies each row. There is only one PK ans it cant be null.
