@@ -2,10 +2,10 @@
 CREATE DATABASE IF NOT EXISTS college; 
 USE college;
 CREATE TABLE student(
-    rollno INT PRIMARY KEY,
-    name VARCHAR(50),
-    marks INT NOT NULL,
-    grade VARCHAR(1),
+    rollno INT PRIMARY KEY ,
+    name VARCHAR(50) DEFAULT UNIQUE, --takes only unique name entries
+    marks INT NOT NULL, --means the column cant hold null value,
+    grade VARCHAR(1) DEFAULT 'S', --sets default value as S
     city VARCHAR(25)
 )
 INSERT INTO student(rollno, name, marks, grade, city)
@@ -27,3 +27,14 @@ ORDER BY marks ASC;
 SELECT * FROM student 
 ORDER BY marks DESC
 LIMIT 3;
+
+
+
+-- Updaing
+UPDATE student
+SET grade ="A"
+WHERE grade="C"
+
+-- Deleting
+DELETE FROM student
+WHERE grade="F"
